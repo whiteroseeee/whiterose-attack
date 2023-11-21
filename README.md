@@ -62,22 +62,17 @@ This script is using for increasing the performance of rose.py.
 Due to the suck performance of python since it has a GIL lock,
 And I am lazy to make a multiprocess version.
 There is a option for linux user to increase their performance of rose.py
-
 This script basicly just run rose.py multiple times to make it "multi-processing"
-
 First, put this script and rose.py in the same folder.
-
 Then prepare the proxies list by yourself or just run "python3 rose.py -down -v 4" (-v socks version)
-
 After that, change the number of process.
-
 At last, change atk_cmd to your command and run the script by "bash multiproc.sh"
 ```
 Example setup of multiproc.sh (-v socks version) (-s attack time)
 ```
 atk_cmd="python3 rose.py -url http://target.com -v 4 -s 60"
 
-#number of process that you want
+# jumlah proses yang Anda inginkan
 process=10
 
 ```
